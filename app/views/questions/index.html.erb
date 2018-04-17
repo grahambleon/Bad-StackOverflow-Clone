@@ -1,7 +1,8 @@
-<h1>HELLOOOooOOoooOOooOOOOoO</h1>
+<h1>Rescue Mission</h1>
+<h3>Definitely not a stack overflow clone!</h3>
 
 <ul>
   <% @questions.each do |question| %>
-    <li> <%= question.title %> </li>
+    <li><%= link_to "#{question.title}", question_path(question) %></li>
   <% end %>
 </ul>
